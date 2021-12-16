@@ -1,0 +1,26 @@
+//fonts
+@import url('https://use.typekit.net/rmf2opm.css');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+$body: 'proxima-nova', sans-serif;
+$header: 'Oswald', sans-serif;
+
+//colors
+$blue: #1130d9;
+$yellow: #fdd32f;
+$redorange: #fa3d37;
+$orange: #fe8c07;
+$pink: #ff97b6;
+$white: #ffffff;
+$black: #000000;
+
+$lightorange: #fb9334;
+$dark: #424242;
+$light: #f9f7f4;
+$teal: #157070;
+$navy: #023d67;
+
+//transition
+$ease: all 0.3s ease;
+$ease-out: all 0.3s ease-out;
+$ease-slow: all 0.5s ease-out;

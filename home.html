@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crispy Chicken | Full Service Social Media Agency ">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="dist/css/main.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <title>Crispy Chicken</title>
+</head>
+
+<body>
+  <div id="nav--main" class="nav--open">
+    <div class="nav--main-content">
+      <div class="logo">
+        <a href="/"><img src="assets/cc-logo-sm.png" alt="crispy chicken small logo"/></a>
+      </div>
+      <ul class="nav--main-list">
+        <li><span class="nav--number">01</span><a href="/about">about</a></li>
+        <li><span class="nav--number">02</span><a href="/work">our work</a></li>
+        <li class="nav--special">
+          <span class="nav--number">03</span>services <i class="fas fa-angle-down icon-sm"></i>
+          <ul id="services--dropdown">
+            <li>audience development</li>
+            <li>social strategy</li>
+            <li>content creation</li>
+            <li>other</li>
+          </ul>
+        </li>
+        <li><span class="nav--number">04</span><a>merch</a></li>
+        <li><span class="nav--number">05</span><a>contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <nav class="navbox">
+    <div id="menu--box" onclick="openMenu()">
+      <div class="menu--icon"></div>
+      <div class="menu--icon"></div>
+      <div class="menu--icon"></div>
+      <p>menu</p>
+    </div>
+    <div id="menu--close" onclick="closeMenu()">
+      <div class="menu--line"></div>
+      <div class="menu--line2"></div>
+      <p>close</p>
+    </div>
+  </nav>
+  <!--NEW HERO TOUT-->
+  <section class="hero-container">
+    <img class="hero-bg" src="assets/shapes/hero-border-bg.png" />
+
+    <!-- video background -->
+    <div class="hero-video-container">
+      <video autoplay muted loop id="hero-video">
+        <source src="assets/videos/cc_hero_vid.mp4" type="video/mp4">
+      </video>
+    </div>
+    
+    <div class="hero--logo">
+      <img id="logo-main" src="assets/cc-logo-main-white.png" alt="crispy chicken main logo" />
+      <img id="logo-mobile" src="assets/cc-logo-mobile.png" alt="crispy chicken mobile logo" />
+    </div>
+    <div class="hero--text">
+      <h3>Full Service Social Media Agency</h3>
+      <div class="hero--text-line"></div>
+    </div>
+    <img id="hero-waves" src="assets/shapes/waves-white.png" />
+    <!-- Use a button to pause/play the video with JavaScript -->
+    <button id="video-btn" onclick="playPause()">pause <i class="fas fa-pause"></i></button>
+  </section>
+
+  <!--NEW WORK SECTION-->
+  <a name="work"></a>
+  <section class="work-container">
+    <img class="bg-overlay" src="assets/shapes/bg-texture.png" />
+    <img class="shape orange-lightening" src="assets/shapes/lightening-orange.png" />
+    <img class="shape wave-lines" src="assets/shapes/waves-white.png" />
+    <div class="work--title-box-line"></div>
+    <div class="work--title-box">
+        <div class="work--title">
+          <div class="work--title-taste"> 
+            <img class="shape pink-circle" src="assets/shapes/circle-pink.png" />
+            <span id="a-text">a </span>
+            <span id="taste-text">taste</span>  
+          </div> 
+          <div class="work--title-other">
+            of our work
+          </div>
+        </div>
+    </div>
+   
+    <div class="work-video--grid">
+      <div class="work-video--item">
+        <div class="work-video--thumbnail">
+          <video autoplay muted loop class="work-video">
+            <source src="assets/videos/cc_work_FB Maluma_vid.mp4" type="video/mp4">
+          </video>
+        </div>
+        <img class="shape yellow-circle" src="assets/shapes/circle-yellow.png" />
+        <div class="work-video--textarea">
+          <p class="sm-cap"><span>Facebook</span></p>
+          <h3>12 hours with</h3>
+          <p class="work-video--details">-Strategy 
+            <br>
+            -Content Creation
+          </p>
+        </div>
+      </div>
+      <div class="work-video--item">
+        <div class="work-video--thumbnail">
+          <video autoplay muted loop class="work-video">
+            <source src="assets/videos/cc_work_Alyson_TikTok_vid.mp4" type="video/mp4">
+          </video>
+        </div>
+        <img class="shape orange-circle" src="assets/shapes/circle-orange.png" />
+        <div class="work-video--textarea">
+          <img class="shape wave-lines" src="assets/shapes/waves-white.png" />
+          <p class="sm-cap"><span>Alyson Stoner</span></p>
+          <h3>Tiktok</h3>
+          <p class="work-video--details">-Social Management
+            <br>
+            -Content Creation
+          </p>
+        </div>
+      </div>
+      <div class="work-video--item">
+        <div class="work-video--thumbnail">
+          <video autoplay muted loop class="work-video">
+            <source src="assets/videos/cc_work_FOX Sports_vid.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="work-video--textarea">
+          <p class="sm-cap"><span>Fox Sports</span></p>
+          <h3>custom intro</h3>
+          <p class="work-video--details">-Original Production
+            <br>
+            -Post-Production
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--NEW WORK SECTION-->
+  <a name="clients"></a>
+  <section class="clients-container">
+    <img class="bg-overlay" src="assets/shapes/bg-texture2.png" />
+    <img class="lightening-yellow" src="assets/shapes/lightening-yellow.png" />
+    <img class="circle-blue" src="assets/shapes/circle-blue.png" />
+    <img class="thumbs-up" src="assets/shapes/thumbs-up.png" />
+    <img class="rocket" src="assets/shapes/rocket.png" />
+    <img class="circle-yellow" src="assets/shapes/circle-yellow-lg.png" />
+    <img class="circle-red" src="assets/shapes/circle-red.png" />
+    <img class="wave-lines2" src="assets/shapes/waves-white.png" />
+    <div class="clients--title-box">
+      <div class="clients--line"></div>
+      <div class="clients--title-text">
+        <h1>clients <span>served</span></h1>
+      </div>
+      <div class="clients--blank"></div>
+    </div>
+
+    <div class="clients--grid">
+      <div class="clients--grid-item">
+        <img class="client-logo" src="assets/clients/MTV-logo.png"/>
+      </div>
+      <div class="clients--grid-item">
+        <img class="client-logo" src="assets/clients/vh1-logo.png" />
+      </div>
+      <div class="clients--grid-item">
+        <img id="fb-logo" class="client-logo" src="assets/clients/facebook-logo.png" />
+      </div>
+      <div class="clients--grid-item">
+        <img class="client-logo" src="assets/clients/paramount-plus-logo.png" />
+      </div>
+      <div class="clients--grid-item">
+        <img class="client-logo" src="assets/clients/TMG-logo.png" />
+      </div>
+      <div class="clients--grid-item">
+        <img class="client-logo" src="assets/clients/LOL-logo.png" />
+      </div>
+      <div class="clients--grid-item">
+        <img class="client-logo" src="assets/clients/spotify-logo.png" />
+      </div>
+      <div class="clients--grid-item">
+        <img class="client-logo" src="assets/clients/fox-sports-logo.png" />
+      </div>
+      <div class="clients--grid-item">
+        <img class="client-logo" src="assets/clients/alyson-stoner-logo.png" />
+      </div>
+      <div class="clients--grid-item">
+        <img class="client-logo" src="assets/clients/cameo-logo.png" />
+      </div>
+      <div class="clients--grid-item">
+        <img class="client-logo" src="assets/clients/collab-logo.png" />
+      </div>
+      <div class="clients--grid-item">
+        <img class="client-logo" src="assets/clients/IGC-logo.png" />
+      </div>
+
+    </div>   
+  </section>
+
+  <!--SERVICES SECTION-->
+
+  <section class="services-container">
+    <img class="orange-circle-sm" src="assets/shapes/circle-orange.png" />
+    <img class="hashtag" src="assets/shapes/hashtag.png" />
+    <img class="lightening-white" src="assets/shapes/lightening-white.png" />
+    <img class="blue-circle" src="assets/shapes/circle-blue.png" />
+    <img class="textbox" src="assets/shapes/textbox.png" />
+    <div class="services--title-box">
+      <div class="services--line"></div>
+      <div class="services--title-text">
+        <h1>What's on <span>the menu</span></h1>
+        <h3>our core services:</h3>
+      </div>
+      <div class="services--blank"></div>
+    </div>
+    <div class="services--grid">
+      <div id="services--strategy" class="services--item item1">
+        social strategy
+      </div>
+      <div id="modal--strategy" class="modal">
+        <div id="modal-overlay"></div>
+        <div class="modal-inner">
+          <button id="modal-close-btn">x</button>
+          <p>We evaluate page and post-level data to create best practices and a plan of attack to increase engagement, followers, cross-promotions and revenue streams.</p>
+          <div class="modal--title">
+            <h3>Social Strategy</h3>
+            <div class="services--white-line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="services--item item2">
+        content creation
+      </div>
+      <div class="services--item item3">
+        social management
+      </div>
+      <div class="services--item item4">
+        production
+      </div>
+    </div>
+  </section>
+
+
+  <script src="js/navigation.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
