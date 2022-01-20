@@ -32,11 +32,68 @@ function playPause() {
 
 //modal
 
-let socialStrategy = document.getElementById('services--strategy');
+// let socialStrategy = document.getElementById('services--strategy');
 
-document.addEventListener('click', (e) => {
-  console.log(e.target);
-})
+
+let modal = document.querySelector(".modal");
+let modal2 = document.querySelector(".modal2");
+let modal3 = document.querySelector(".modal3");
+let modal4 = document.querySelector(".modal4");
+
+let closeButton = document.querySelector(".close-button");
+let closeButton2 = document.querySelector(".close-button2");
+let closeButton3 = document.querySelector(".close-button3");
+let closeButton4 = document.querySelector(".close-button4");
+let strategyModal = document.getElementById('services--strategy');
+let contentModal = document.getElementById('services--content');
+let managementModal = document.getElementById('services--management');
+let productionModal = document.getElementById('services--production');
+
+
+
+function showModal(e) {
+  if(e.target === strategyModal) {
+    modal.classList.add('show-modal');
+  }
+  if(e.target === contentModal) {
+    modal2.classList.add('show-modal');
+  }
+  if(e.target === managementModal) {
+    modal3.classList.add('show-modal');
+  }
+  if(e.target === productionModal) {
+    modal4.classList.add('show-modal');
+  }
+}
+
+function hideModal(e) {
+  if(e.target === closeButton) {
+    modal.classList.remove('show-modal');
+  }
+  if(e.target === closeButton2) {
+    modal2.classList.remove('show-modal');
+  }
+  if(e.target === closeButton3) {
+    modal3.classList.remove('show-modal');
+  }
+  if(e.target === closeButton4) {
+    modal4.classList.remove('show-modal');
+  }
+}
+
+
+
+strategyModal.addEventListener("click", showModal);
+contentModal.addEventListener("click", showModal);
+managementModal.addEventListener("click", showModal);
+productionModal.addEventListener("click", showModal);
+
+
+closeButton.addEventListener("click", hideModal);
+closeButton2.addEventListener("click", hideModal);
+closeButton3.addEventListener("click", hideModal);
+closeButton4.addEventListener("click", hideModal);
+
 
 // let modal;
 // document.addEventListener("click", (e) => {
