@@ -106,44 +106,35 @@ button {
   width: 100%;
   position: absolute;
 }
-#hero-waves {
-  position: absolute;
-  right: -40px;
-  top: 35%;
-  width: 200px;
-}
-
-.hero--logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  #logo-main {
-    width: 60%;
-    margin-top: -17px;
-    margin-left: 10px;
-  }
-}
-#logo-mobile {
-  display: none;
-}
 
 .hero--text {
   position: absolute;
-  bottom: 2em;
-  right: 2em;
+  bottom: 2%;
+  right: 2.5%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0.5em 0;
   h3 {
     color: $white;
-    font-size: 2.4em;
+    width: 35%;
+    margin-top: 2em;
+    text-align: right;
+    margin-right: 10px;
   }
   .hero--text-line {
     background: $white;
-    width: 300px;
-    height: 5px;
-    margin-left: 10px;
+    width: 5%;
+    height: 11px;
+    margin-top: 4em;
+  }
+}
+
+.hero--logo {
+  width: 60%;
+  #logo-main {
+    width: 100%;
+    margin-left: 0.9em;
+    margin-bottom: -2.7em;
   }
 }
 
