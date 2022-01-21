@@ -94,6 +94,9 @@ button {
 }
 
 //* HERO TOUT **//
+.hero-container-mobile {
+  display: none;
+}
 
 .hero-container {
   width: 100%;
@@ -486,7 +489,7 @@ button {
   .lightening-white {
     position: absolute;
     top: 0;
-    right: -33.3%;
+    right: -37%;
     height: 100%;
   }
   .blue-circle {
@@ -560,6 +563,7 @@ button {
   max-width: 1300px;
   margin-top: 4em;
   z-index: 2;
+  position: relative;
 }
 
 .services--item {
@@ -594,13 +598,8 @@ button {
 .modal2,
 .modal3,
 .modal4 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   z-index: 1;
-  width: 75%;
-  height: 43%;
   visibility: hidden;
   opacity: 0;
   transform: scale(1.1);
@@ -612,11 +611,26 @@ button {
   transform: scale(1);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
-
+.modal {
+  top: -80px;
+  left: -60px;
+}
+.modal2 {
+  top: -80px;
+  right: -60px;
+}
+.modal3 {
+  bottom: -80px;
+  left: -60px;
+}
+.modal4 {
+  bottom: -80px;
+  right: -60px;
+}
 .modal-inner {
   background: $orange;
   background-image: url('../assets/shapes/bg-texture-light.png');
-  max-width: 600px;
+  max-width: 550px;
   padding: 1em;
   margin: auto;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
@@ -643,7 +657,7 @@ button {
     line-height: 1.4em;
     text-align: left;
     font-weight: 700;
-    padding: 0 1.2em 1em 1.2em;
+    padding: 0 1.2em;
   }
   h3 {
     text-align: right;
@@ -852,6 +866,16 @@ button {
       width: 6%;
     }
   }
+  .orange-lightening {
+    right: -10%;
+  }
+  .work-video--grid {
+    grid-gap: 5%;
+  }
+
+  .work-video--textarea {
+    height: 50%;
+  }
 }
 
 @media screen and (max-width: 1018px) {
@@ -863,6 +887,47 @@ button {
       font-size: 1.4em;
       width: 45%;
     }
+  }
+  .work-video--grid {
+    width: 92%;
+  }
+  .work--title-box {
+    width: 90%;
+    height: 200px;
+  }
+  .work--title {
+    padding-left: 55px;
+    font-size: 5em;
+  }
+  .work--title-box-line {
+    width: 8%;
+  }
+  .work-video--textarea p {
+    font-size: 1.7em;
+  }
+  .work-video {
+    height: 100%;
+    width: auto;
+  }
+  .clients--title-box {
+    .clients--line {
+      width: 18%;
+    }
+  }
+
+  .clients--title-box {
+    .clients--title-text {
+      h1 {
+        font-size: 5em;
+      }
+    }
+  }
+  .lightening-yellow {
+    right: -300px;
+  }
+  .circle-blue {
+    top: -70px;
+    right: -70px;
   }
 }
 
@@ -884,8 +949,107 @@ button {
       margin-bottom: 1em;
     }
   }
+  .work--title-box {
+    width: 100%;
+  }
+  .work--title-box-line {
+    top: 120px;
+  }
+  .work--title {
+    font-size: 4.4em;
+    padding-left: 70px;
+  }
+  .work-video--grid {
+    width: 70%;
+    grid-template-columns: 1fr;
+    grid-gap: 2%;
+    margin-bottom: 200px;
+  }
+  .work-video {
+    width: 100%;
+    height: auto;
+  }
+  .work-video--item {
+    height: 700px;
+  }
+  .work-video--textarea {
+    height: 40%;
+  }
+  .orange-lightening {
+    display: none;
+  }
+  .clients--title-box {
+    .clients--line {
+      width: 20%;
+    }
+  }
+  .clients--title-box {
+    .clients--title-text {
+      margin-left: 20px;
+      width: 90%;
+    }
+  }
+  .clients--grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .lightening-yellow {
+    right: -600px;
+  }
+  .circle-yellow {
+    width: 27%;
+    top: 45%;
+  }
+  .circle-blue {
+    width: 20%;
+  }
+  .circle-red {
+    width: 20%;
+    left: -10%;
+  }
+  .wave-lines2 {
+    width: 18%;
+  }
 }
 
 //phone size
 @media screen and (max-width: 620px) {
+  .hero-container {
+    display: none;
+  }
+  .hero-container-mobile {
+    width: 100%;
+    height: 100vh;
+    background: url('/assets/cc-hero-mobile.png');
+    background-size: cover;
+    background-position-y: center;
+    display: block;
+  }
+  .work--title-box {
+    height: 230px;
+  }
+  .work--title-other {
+    margin-left: 0;
+    margin-top: 0.1em;
+  }
+  .work-video--item {
+    height: 500px;
+  }
+  .work-video--grid {
+    grid-gap: 5%;
+    margin-bottom: 300px;
+  }
+  .clients--title-box {
+    .clients--title-text {
+      h1 {
+        span {
+          position: relative;
+        }
+      }
+    }
+  }
+  .clients--title-box {
+    .clients--title-text {
+      width: 60%;
+    }
+  }
 }
