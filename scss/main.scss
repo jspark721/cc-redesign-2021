@@ -574,6 +574,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   color: $white;
   font-family: $header;
   text-transform: uppercase;
@@ -876,6 +877,29 @@ button {
   .work-video--textarea {
     height: 50%;
   }
+  .services-container {
+    .lightening-white {
+      right: -45%;
+      height: 90%;
+    }
+  }
+  .services--title-box {
+    justify-content: flex-start;
+    .services--title-text {
+      margin-left: 10px;
+      width: 90%;
+      .services--menu-text {
+        text-align: left;
+        margin-left: 10px;
+      }
+    }
+    .services--line {
+      width: 12%;
+    }
+    .services--blank {
+      width: 0;
+    }
+  }
 }
 
 @media screen and (max-width: 1018px) {
@@ -928,6 +952,22 @@ button {
   .circle-blue {
     top: -70px;
     right: -70px;
+  }
+  .services--title-box {
+    .services--title-text {
+      h1 {
+        font-size: 5em;
+      }
+    }
+  }
+  .services--item {
+    font-size: 2.1em;
+  }
+  .services-container {
+    .lightening-white {
+      right: -55%;
+      height: 90%;
+    }
   }
 }
 
@@ -1009,10 +1049,24 @@ button {
   .wave-lines2 {
     width: 18%;
   }
+  .services--title-box {
+    .services--title-text {
+      display: block;
+      .services--menu-text {
+        margin-top: 0;
+        margin-left: 150px;
+      }
+    }
+  }
+  .services-container {
+    .lightening-white {
+      right: -65%;
+    }
+  }
 }
 
 //phone size
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 650px) {
   .hero-container {
     display: none;
   }
@@ -1050,6 +1104,51 @@ button {
   .clients--title-box {
     .clients--title-text {
       width: 60%;
+    }
+  }
+  .services-container {
+    .lightening-white {
+      right: -115%;
+      height: 80%;
+    }
+  }
+  .services--grid {
+    grid-template-columns: 1fr;
+  }
+  .services--title-box {
+    .services--line {
+      width: 20%;
+    }
+    .services--title-text {
+      .services--menu-text {
+        margin-top: 0;
+        margin-left: 50px;
+      }
+    }
+  }
+  .modal {
+    top: -70px;
+    left: 0;
+  }
+  .modal2 {
+    right: 0;
+    top: 50px;
+  }
+  .modal3 {
+    left: 0;
+    top: 200px;
+  }
+  .modal4 {
+    right: 0;
+    bottom: -100px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .services-container {
+    .lightening-white {
+      height: 70%;
+      right: -130%;
     }
   }
 }
