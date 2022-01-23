@@ -999,6 +999,34 @@ button {
   width: 250px;
   position: absolute;
 }
+
+/*CONTACT PAGE */
+.contact-page {
+  background: $redorange;
+  width: 100vw;
+  height: 100vh;
+}
+
+.contact-page-container {
+  .services--title-box {
+    justify-content: flex-start;
+    .services--title-text {
+      h1 {
+        font-size: 6.5em;
+      }
+    }
+    .services--line {
+      width: 40%;
+    }
+    .services--menu-text {
+      margin-left: 10px;
+      h1 {
+        color: $yellow;
+      }
+    }
+  }
+}
+
 /*------------- MEDIA QUERIES ------------- */
 //large desktops
 
