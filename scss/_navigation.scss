@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 #menu--box {
   position: fixed;
@@ -22,9 +22,9 @@
   }
   &:hover {
     transform: scale(1.05);
-    .menu--icon {
-      background: $lightorange;
-    }
+    // .menu--icon {
+    //   background: $lightorange;
+    // }
   }
 }
 
@@ -127,7 +127,7 @@
     margin-top: 10px;
     color: $white;
     &:hover {
-      color: $lightorange;
+      color: $redorange;
     }
   }
 }
