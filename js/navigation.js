@@ -21,3 +21,7 @@ function closeMenu() {
   menuIcon.style.transform = 'translateY(0)';
   closeIcon.style.transform = 'translateY(-100px)';
 }
+
+let servicesLink = document.getElementById('nav-services-link')
+
+servicesLink.addEventListener('click', closeMenu);
