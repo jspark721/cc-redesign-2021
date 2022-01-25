@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 #menu--box {
   position: fixed;
@@ -113,7 +113,7 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
   li {
     margin-bottom: 20px;

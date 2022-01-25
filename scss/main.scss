@@ -1017,11 +1017,9 @@ button {
   grid-gap: 2.5em;
 }
 .about--contact-circle {
-  margin-top: 50%;
-  margin-left: 72%;
-  width: 250px;
-  position: absolute;
-  z-index: 5;
+  width: 280px;
+  margin-left: 40px;
+  margin-top: -20px;
 }
 
 /*CONTACT PAGE */
@@ -1258,10 +1256,6 @@ button {
     right: 34%;
     top: 170%;
   }
-  .about--contact-circle {
-    margin-top: 70%;
-    margin-left: 65%;
-  }
   .lightening-blue {
     right: -35%;
   }
@@ -1362,9 +1356,6 @@ button {
     top: 140%;
     z-index: 6;
   }
-  .about--contact-circle {
-    margin-top: 88%;
-  }
   .waves-white2 {
     right: 22%;
     top: 165%;
@@ -1408,11 +1399,6 @@ button {
   }
   .lightening-pink {
     right: -60%;
-  }
-  .about--contact-circle {
-    margin-top: 105%;
-    width: 200px;
-    margin-left: 70%;
   }
   .lightening-blue {
     right: -45%;
@@ -1562,18 +1548,10 @@ button {
   .airplane {
     top: 180%;
   }
-  .about--contact-circle {
-    margin-top: 180%;
-    width: 250px;
-    margin-left: 55%;
-  }
 }
 @media screen and (max-width: 770px) {
   .lightening-pink {
     right: -100%;
-  }
-  .about--contact-circle {
-    margin-top: 210%;
   }
   .about-container {
     .waves-white {
@@ -1594,9 +1572,7 @@ button {
   .megaphone {
     top: 25%;
   }
-  .about--contact-circle {
-    margin-top: 210%;
-  }
+
   .lightening-blue {
     right: -55%;
   }
@@ -1613,6 +1589,7 @@ button {
     background: url('/assets/cc-hero-mobile.png');
     background-size: cover;
     background-position-y: center;
+    background-position-x: center;
     display: block;
   }
   .work--title-box {
@@ -1709,10 +1686,6 @@ button {
       width: 12%;
     }
   }
-  .about--contact-circle {
-    margin-top: 240%;
-    width: 200px;
-  }
   .lightening-pink {
     right: -120%;
   }
@@ -1767,9 +1740,6 @@ button {
   }
   .lightening-pink {
     right: -125%;
-  }
-  .about--contact-circle {
-    margin-top: 255%;
   }
   .lightening-blue {
     right: -70%;
@@ -1829,6 +1799,10 @@ button {
 }
 
 @media screen and (max-width: 495px) {
+  .hero-container-mobile {
+    height: 620px;
+    background-size: cover;
+  }
   .megaphone {
     top: 14%;
   }
@@ -1862,9 +1836,5 @@ button {
   }
   .pink-circle2 {
     bottom: -20%;
-  }
-  .about--contact-circle {
-    margin-top: 3900px;
-    margin-left: 40%;
   }
 }
