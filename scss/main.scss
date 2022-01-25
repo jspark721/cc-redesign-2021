@@ -1803,6 +1803,39 @@ button {
     height: 620px;
     background-size: cover;
   }
+  .work--title-box-line {
+    width: 15%;
+    height: 8px;
+    top: 110px;
+  }
+
+  .work--title-box {
+    height: 280px;
+    font-size: 0.9em;
+  }
+  .work-video--thumbnail {
+    height: 50%;
+  }
+  .work-video {
+    width: auto;
+    height: 100%;
+  }
+  .work-video--textarea {
+    height: 50%;
+    .sm-cap {
+      margin-top: 15px;
+      font-size: 2em;
+    }
+    h3 {
+      font-size: 1.7em;
+    }
+    p {
+      font-size: 1.3em;
+    }
+  }
+  .work-video--details {
+    width: 85%;
+  }
   .megaphone {
     top: 14%;
   }
@@ -1813,7 +1846,127 @@ button {
       margin-left: 12px;
     }
   }
-
+  .clients--title-box {
+    .clients--title-text {
+      width: 100%;
+      font-size: 0.8em;
+      h1 {
+        span {
+          margin-left: 0;
+        }
+      }
+    }
+    .clients--line {
+      width: 20%;
+      height: 8px;
+      margin-left: 0;
+    }
+  }
+  .clients--blank {
+    display: none;
+  }
+  .clients--grid {
+    width: 90%;
+    margin: 50px 0 80px 0;
+  }
+  .thumbs-up {
+    bottom: 3%;
+    width: 70px;
+  }
+  .rocket {
+    top: 22%;
+    width: 120px;
+  }
+  .services-container {
+    .lightening-white {
+      height: 50%;
+      right: -140%;
+      top: 30%;
+    }
+    .orange-circle-sm {
+      width: 30%;
+      top: 25%;
+    }
+    .hashtag {
+      width: 20%;
+      top: 23%;
+    }
+    .textbox {
+      width: 20%;
+      bottom: 2%;
+    }
+  }
+  .services--title-box {
+    .services--line {
+      width: 20%;
+      height: 8px;
+      top: 110px;
+    }
+    .services--title-text {
+      font-size: 0.8em;
+      h1 {
+        font-size: 4em;
+      }
+      .services--menu-text {
+        text-align: left;
+        margin-left: 3px;
+        h1 {
+          margin-left: 3px;
+        }
+        .sm-span-text {
+          font-size: 2em;
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+  .services--grid {
+    margin-top: 2.5em;
+    row-gap: 2em;
+  }
+  .services--item {
+    font-size: 1.5em;
+    height: 110px;
+  }
+  .modal-inner {
+    padding: 0 0.5em;
+    p {
+      font-size: 1em;
+      margin-top: 0;
+    }
+    #modal-close-btn {
+      margin-top: 10px;
+    }
+  }
+  .modal--title {
+    font-size: 0.6em;
+    margin-bottom: 1.5em;
+    .services--white-line {
+      height: 5px;
+      width: 55px;
+    }
+  }
+  .services--details-box {
+    margin-top: 2.5em;
+  }
+  .contact--title-text {
+    font-size: 0.75em;
+  }
+  .contact--chicken {
+    display: none;
+  }
+  .contact--contact-circle {
+    position: relative;
+    width: 95%;
+    margin-left: 10%;
+    top: 5%;
+  }
+  .contact-container {
+    .textbox {
+      width: 20%;
+      top: 25%;
+    }
+  }
   .founders-container {
     height: 800px;
   }
@@ -1836,5 +1989,10 @@ button {
   }
   .pink-circle2 {
     bottom: -20%;
+  }
+  .nav--main-list {
+    align-items: center;
+    text-align: center;
+    margin-top: 75px;
   }
 }
