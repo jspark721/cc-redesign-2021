@@ -1482,7 +1482,7 @@ button {
     -ms-grid-columns: 1fr 1fr;
   }
   .lightening-yellow {
-    right: -600px;
+    right: -710px;
   }
   .circle-yellow {
     width: 27%;
@@ -1980,10 +1980,6 @@ button {
     grid-template-columns: 1fr;
     -ms-grid-columns: 1fr;
   }
-  .about-img {
-    width: 280px;
-    height: 280px;
-  }
   .lightening-blue {
     right: -95%;
   }
@@ -1994,5 +1990,71 @@ button {
     align-items: center;
     text-align: center;
     margin-top: 75px;
+  }
+  .about-container {
+    .red-circle {
+      display: none;
+    }
+  }
+  .about--title-box {
+    position: relative;
+    .about--line {
+      width: 16%;
+      height: 10px;
+      margin-top: 30px;
+    }
+    .about--title-text {
+      display: block;
+      margin-left: 0;
+      margin-top: 0;
+      .about--crispy-text {
+        margin-left: 0;
+        margin-top: 0;
+      }
+    }
+    .megaphone {
+      position: relative;
+      margin-top: 20%;
+    }
+  }
+  .about-description {
+    width: 85%;
+  }
+  .about-item {
+    .about-desc-blue {
+      margin-left: 0;
+    }
+    .about-desc-redorange {
+      margin-left: 0;
+    }
+  }
+  .about-img {
+    width: 250px;
+    height: 250px;
+  }
+  .about--contact-circle {
+    width: 250px;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .coop-container {
+    margin-top: 0;
+  }
+  .contact-page-container {
+    .star {
+      width: 50px;
+    }
+    .services--title-box {
+      .services--line {
+        height: 8px;
+        margin-top: 40px;
+      }
+      .services--title-text {
+        h1 {
+          font-size: 4em;
+        }
+      }
+    }
   }
 }
