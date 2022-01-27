@@ -1874,7 +1874,7 @@ button {
     width: 70px;
   }
   .rocket {
-    top: 22%;
+    top: 18%;
     width: 120px;
   }
   .services-container {
@@ -1968,7 +1968,7 @@ button {
     }
   }
   .founders-container {
-    height: 800px;
+    height: 940px;
   }
   .founders-flexbox {
     flex-direction: column;
@@ -2029,8 +2029,8 @@ button {
     }
   }
   .about-img {
-    width: 250px;
-    height: 250px;
+    width: 320px;
+    height: 320px;
   }
   .about--contact-circle {
     width: 250px;
@@ -2056,5 +2056,27 @@ button {
         }
       }
     }
+  }
+  .contact-container {
+    max-height: 610px;
+  }
+}
+@media screen and (max-width: 412px) {
+  .founders-container {
+    height: 850px;
+  }
+  .about-img {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .founders-container {
+    height: 800px;
+  }
+  .about-img {
+    width: 250px;
+    height: 250px;
   }
 }
